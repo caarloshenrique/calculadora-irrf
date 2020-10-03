@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Trabalhador</title>
+</head>
+<body>
+	<h1>Cálculo do IRRF</h1>
+	
+	<p>Nome: <span th:text="${trabalhador.nome}"></span></p>
+	<p>IRRF: R$<span th:text="${trabalhador.irrf}"></span></p>
+	
+	<a th:href="@{/}">Voltar para formulário</a>
+</body>
+</html>

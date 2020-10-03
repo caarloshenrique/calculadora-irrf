@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Trabalhador</title>
+</head>
+<body>
+	<form th:action="@{/irrf}" th:object="${trabalhador}">
+		Nome: <input type="text" th:field="*{nome}"> <br>
+		Salário: <input type="number" step="0.01" th:field="*{salario}"> <br>
+		Dependentes: <input type="number" th:field="*{dependentes}"> <br>
+		<input type="submit" value="Calcular IRRF">
+	</form>
+</body>
+</html>
